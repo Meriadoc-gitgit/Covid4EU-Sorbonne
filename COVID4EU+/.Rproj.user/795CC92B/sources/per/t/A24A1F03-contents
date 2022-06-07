@@ -1,0 +1,5 @@
+extraDF
+extraDF$new_deaths[is.na(extraDF$new_deaths)]<-0
+extraDF$new_cases[is.na(extraDF$new_cases)]<-0
+
+write_csv(extraDF,"extra.csv")
